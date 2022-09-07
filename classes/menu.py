@@ -46,5 +46,5 @@ if __name__=='__main__' :
         op2=menu2.ver()
     if op=="2":
         menu2=MenuEstudiantes()
-        op2=menu3.ver()
+        op2=menu2.ver()
 

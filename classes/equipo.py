@@ -43,29 +43,6 @@ def crearEquipo():
     return e
 
 
-"""def verPrestamos():
-    archivo = open("database/prestamos.csv","r")
-    prestamos = archivo.readlines()
-    header = ["Nombre","Carnet","Equipo","Fecha de prestamo","Fecha de entrega"]
-    matriz1 = []
-
-    numero_carnet = input("Por favor ingrese su número de carnet:")
-
-    for i in prestamos:
-        i=i.replace("\n","")
-        i=i.split(";")
-        matriz1.append(i)
-
-    print(tabulate(matriz1,header,tablefmt="grid"))
-
-    matriz_prestamos=[]
-    for i in range(0 , len(matriz1)):
-        if matriz1[i][1] == numero_carnet:
-            matriz_prestamos.append(matriz1[i])
-            
-
-    print(tabulate(matriz_prestamos, header, tablefmt="grid"))
-"""
 def consultarEquipo():
     a=open("database/equipos.csv","r")
     disponibilidad=a.readlines()
@@ -93,7 +70,7 @@ def consultarEquipo():
 def registroMantenimiento():
     listaEquipos=getAllEquipos()
     equipo=input("Equipo:")
-    fum=input("Fecha de último mantenimiento: (yyyy-mm-dd")
+    fum=input("Fecha de último mantenimiento: (yyyy-mm-dd)")
     pos=0
     for e in listaEquipos:
         if equipo in e:
