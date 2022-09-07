@@ -46,10 +46,9 @@ def verPrestamos():
     for i in range(0 , len(matriz1)):
         if matriz1[i][1] == numero_carnet:
             matriz_prestamos.append(matriz1[i])
-
-
-    print(tabulate(matriz_prestamos, header, tablefmt="grid"))
-
+            print(tabulate(matriz_prestamos, header, tablefmt="grid"))
+    else:
+            print("El número de carnet ingresado no registra prestamos actuales")
 
 
 

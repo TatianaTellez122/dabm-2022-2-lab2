@@ -57,7 +57,7 @@ def consultarEquipo():
         i = i.split(";")
         mat1.append(i)
 
-    print(tabulate(mat1, header, tablefmt="grid"))
+    """print(tabulate(mat1, header, tablefmt="grid"))"""
 
     matdisp=[]
 
