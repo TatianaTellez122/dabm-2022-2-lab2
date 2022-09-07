@@ -4,14 +4,9 @@ Created on Mon Aug 22 21:46:56 2022
 
 @author: Tatiana Téllez
 """
-
 from classes.menu import *
 from classes.equipo import *
 from classes.prestamo import *
-
-
-class MenuEstudiantes:
-    pass
 
 
 def main():
@@ -41,10 +36,15 @@ def main():
             verPrestamos()
         elif op2=="2":
             consultarEquipo()
-'''
+
+    elif op=="3":
+        exit()
+
+    main()
+
 if __name__=="__main__":
     main()
-'''
-main()
+
+
 
 
